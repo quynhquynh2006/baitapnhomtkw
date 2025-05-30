@@ -231,11 +231,15 @@ h3 {
 
 /* --- Header Styles --- */
 .main-header {
+     margin-top: 120px; /* Thêm vào để không bị navbar che */
     background: url('https://media-cdn-v2.laodong.vn/storage/newsportal/2025/3/16/1477633/Ao-Dai-Min.jpeg') no-repeat center center/cover;
     color: white;
     padding: 200px 0;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Đã có thông qua ::before, nhưng có thể đặt rõ ràng ở đây */
+    width: 100%; /* Mặc định cho block element, nhưng có thể tường minh */
+    box-sizing: border-box;
 }
 .main-header::before {
     content: "";
@@ -590,8 +594,28 @@ footer::before {
     .container {
         width: 95%;
     }
-
+     header.container { /* Mục tiêu là thẻ header có class container */
+        width: 100%; /* Đảm bảo container chứa main-header là full width */
+    }
+    .main-header {
+        padding: 100px 10px 60px 10px; /* Điều chỉnh padding cho mobile nếu cần */
+        margin-top: 100px; /* Điều chỉnh nếu chiều cao navbar thay đổi trên mobile, ví dụ navbar còn 100px */
+                           /* Nếu navbar vẫn là 120px thì giữ margin-top: 120px; */
+        /* width: 100vw; Nếu bạn muốn nó là full viewport width bất chấp parent */
+        /* box-sizing: border-box; */
+    }
     .main-header h1 {
-        font-size: 2em;
+        font-size: 2em; /* Hoặc nhỏ hơn cho màn hình hẹp */
+    }
+}
+@media (max-width: 991.98px) { /* Màn hình tablet, navbar padding thay đổi */
+    .navbar {
+        /* height: auto; /* Kiểm tra chiều cao thực tế của navbar ở đây */
+        /* padding: 10px 15px; */ /* Chiều cao navbar có thể thay đổi */
+    }
+    .main-header {
+        margin-top: 100px; /* Điều chỉnh margin-top dựa trên chiều cao thực tế của navbar sau khi thay đổi padding */
+                           /* Hoặc giữ 120px nếu chiều cao tổng navbar không đổi nhiều */
+        padding: 150px 10px; /* Ví dụ */
     }
 }
