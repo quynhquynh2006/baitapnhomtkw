@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Khám phá các tour du lịch biển đảo Việt Nam cùng HAQ OCEAN TOURS - dịch vụ chuyên nghiệp, hành trình độc đáo, ưu đãi hấp dẫn.">
+    <title>Biển Đảo Việt Nam - HAQ OCEAN TOURS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="container1">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/screenshot_1748014051.png" alt="Logo">
+            </div>
+           <div class="menu-icon">&#9776;</div>
+            <ul class="menu">
+                <li><a href="trangchu.html">Trang chủ</a></li>
+                <li><a href="vechungtoi.html">Về chúng tôi</a></li>
+                <li class="dropdown">
+                    <a href="diadiem1.html" class="dropbtn">Địa điểm nổi bật <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="mienbac1.html">Miền Bắc</a>
+                        <a href="miennam1.html">Miền Trung</a>
+                        <a href="mientrung1.html">Miền Nam</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="Trang tours.html" class="dropbtn">Tours <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="MienBac.html">Miền Bắc</a>
+                        <a href="MienTrung.html">Miền Trung</a>
+                        <a href="MienNam.html">Miền Nam</a>
+                    </div>
+                </li>
+                <li><a href="trangtintuc.html">Tin tức</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <video autoplay muted loop playsinline id="video-background">
+                <source src="video/trangchu.mp4" type="video/mp4">
+            </video>
+            <div class="overlay">
+                <h2>Tìm kiếm Tour Du Lịch</h2>
+                <form class="search-form">
+                    <input type="text" id="search-keywords" placeholder="Nhập tên địa điểm (VD: Vịnh Hạ Long, Côn Đảo...)">
+                    <div class="filter-group">
+                        <label for="date">Ngày khởi hành:</label>
+                        <input type="date" id="date">
+                    </div>
+                    <div class="filter-group">
+                        <label for="guests">Số lượng khách:</label>
+                        <input type="number" id="guests" min="1" max="20" value="1">
+                    </div>
+                    <div class="filter-group">
+                     <label for="duration">Chọn số ngày:</label>
+                     <select id="duration">
+                     <option value="">Tất cả</option>
+                        <option value="3n2d">3 ngày 2 đêm</option>
+                       <option value="4n3d">4 ngày 3 đêm</option>
+                     </select>
+                     </div>
+                    <button type="button" id="search-button"><i class="fas fa-search"></i> Tìm kiếm</button>
+                </form>
+                <div id="search-results"></div>
+            </div>
+        </section>
+
+        <section class="why-choose-us">
+            <h2>Lý do chọn HAQ OCEAN TOURS</h2>
+            <div class="reasons-grid">
+                <div class="reason-item">
+                    <i class="fas fa-star"></i>
+                    <h3>Chất lượng hàng đầu</h3>
+                    <p>Cam kết mang đến trải nghiệm tuyệt vời với dịch vụ cao cấp.</p>
+                </div>
+                <div class="reason-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Đội ngũ chuyên nghiệp</h3>
+                    <p>Hướng dẫn viên nhiệt tình, giàu kinh nghiệm.</p>
+                </div>
+                <div class="reason-item">
+                    <i class="fas fa-route"></i>
+                    <h3>Hành trình độc đáo</h3>
+                    <p>Khám phá những điểm đến ít người biết, những cung đường ấn tượng.</p>
+                </div>
+                <div class="reason-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>An toàn tuyệt đối</h3>
+                    <p>Luôn đặt sự an toàn và sức khỏe của khách hàng lên hàng đầu.</p>
+                </div>
+                <div class="reason-item">
+                    <i class="fas fa-gem"></i>
+                    <h3>Giá trị xứng đáng</h3>
+                    <p>Có mức giá cạnh tranh, ưu đãi và quà tặng đặc biệt, kỷ niệm khó quên.</p>
+                </div>
+                <div class="reason-item">
+                    <i class="fas fa-user-cog"></i>
+                    <h3>Trải nghiệm cá nhân hóa</h3>
+                    <p>Cung cấp lựa chọn tùy chỉnh theo yêu cầu của bạn.</p>
+                </div>
+            </div>
+            <div class="cta">
+                <p><i>"Chúng tôi không chỉ là một công ty du lịch, chúng tôi là những người đam mê khám phá!</i></p>
+                <p><i>Hãy để chúng tôi biến giấc mơ du lịch của bạn thành hiện thực!"</i></p>
+                <a href="vechungtoi.html" class="btn-view">Tìm hiểu thêm về chúng tôi</a>
+            </div>
+    
+        </section>
+
+        <section class="hot-deals">
+            <h2>HOT DEALS/Giá tốt hôm nay!</h2>
+            <div class="deals-grid">
+                <div class="deal-card">
+                    <img src="https://khaihoanphuquoc.com.vn/wp-content/uploads/2023/11/du-lich-phu-quoc-thang-10-1.jpg" alt="Phú Quốc">
+                    <h3>Tour Phú Quốc 3N2Đ</h3>
+                    <p>Khám phá đảo ngọc, lặn ngắm san hô.</p>
+                    <span class="old-price">4.500.000 VNĐ</span>
+                    <span class="new-price">3.200.000 VNĐ</span>
+                </div>
+                <div class="deal-card">
+                    <img src="https://cdnphoto.dantri.com.vn/J_-dW-9zDlp2Gu2OJnwYlDJ_Zqg=/thumb_w/1020/2025/05/22/vinh-ha-long-1747912111602.jpeg" alt="Hạ Long">
+                    <h3>Du thuyền Vịnh Hạ Long 2N1Đ</h3>
+                    <p>Trải nghiệm nghỉ dưỡng trên du thuyền sang trọng.</p>
+                    <span class="old-price">6.000.000 VNĐ</span>
+                    <span class="new-price">4.800.000 VNĐ</span>
+                </div>
+                <div class="deal-card">
+                    <img src="https://condao.com.vn/uploads/news/2023_03/toan-canh-thi-tran-con-dao_1.jpg" alt="Côn Đảo">
+                    <h3>Tour Côn Đảo huyền bí 4N3Đ</h3>
+                    <p>Tìm hiểu lịch sử, khám phá thiên nhiên hoang sơ.</p>
+                    <span class="old-price">7.000.000 VNĐ</span>
+                    <span class="new-price">5.500.000 VNĐ</span>
+                </div>
+            </div>
+           <a href="Trang tours.html" class="btn-view">Tìm hiểu thêm và đặt tour ngay</a> 
+        </section>
+
+        <section class="popular-destinations">
+            <h2>Các địa điểm phổ biến</h2>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <img src="https://phuquocsensetravel.com/view-800/at_gioi-thieu-tong-quan-du-lich-phu-quoc_67c769f2340eeee7cfa02779d6463d1a.jpg" alt="Phú Quốc">
+                    <h3>Đảo Phú Quốc</h3>
+                    <p>Đảo ngọc phương Nam với những bãi biển trải dài.</p>
+                </div>
+                <div class="destination-card">
+                    <img src="https://special.nhandan.vn/30-nam-mot-chang-duong-di-san-Vinh-Ha-Long/assets/HLCklusX0n/things-to-do-in-ha-long-bay-banner-1-1920x1080.jpg" alt="Vịnh Hạ Long">
+                    <h3>Vịnh Hạ Long</h3>
+                    <p>Di sản thiên nhiên thế giới với hàng nghìn đảo đá vôi.</p>
+                </div>
+                <div class="destination-card">
+                    <img src="https://vcdn1-dulich.vnecdn.net/2025/05/16/8e64ee43e23a57640e2b-174736902-5229-4364-1747370043.jpg?w=460&h=0&q=100&dpr=2&fit=crop&s=HTvKSJUlDPyA7uhrVtKEwA" alt="Đảo Lý Sơn">
+                    <h3>Đảo Lý Sơn</h3>
+                    <p>Viên ngọc quý giữa biển khơi, vẻ đẹp hoang sơ của thiên nhiên.</p>
+                </div>
+            </div>
+            <a href="diadiem1.html" class="btn-view">Tìm hiểu thêm</a>
+        </section>
+
+        <section class="customer-reviews">
+            <h2>Đánh giá của khách hàng</h2>
+            <div class="reviews-slider">
+                <div class="review-card">
+                    <p class="review-text">"HAQ OCEAN TOURS đã mang đến cho gia đình tôi một kỳ nghỉ tuyệt vời tại Phú Quốc. Mọi thứ đều được tổ chức chu đáo và chuyên nghiệp."</p>
+                    <p class="reviewer-name">- Nguyễn Thị Lan Anh</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Tour Vịnh Hạ Long quá xuất sắc! Cảnh đẹp hùng vĩ và dịch vụ trên du thuyền rất đẳng cấp. Chắc chắn sẽ quay lại."</p>
+                    <p class="reviewer-name">- Trần Văn Hùng</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Tôi rất ấn tượng với sự nhiệt tình của đội ngũ HAQ OCEAN TOURS. Họ đã giúp tôi có những trải nghiệm khó quên ở Côn Đảo."</p>
+                    <p class="reviewer-name">- Lê Minh Khoa</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Chuyến đi Đảo Lý Sơn thật sự đáng nhớ! Tôi và bạn bè đã có những giây phút thư giãn tuyệt vời. Rất khuyến khích!"</p>
+                    <p class="reviewer-name">- Phạm Thùy Linh</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Chuyến đi Đảo Cát Bà thật sự đáng nhớ! Tôi và bạn bè đã có những giây phút thư giãn tuyệt vời. Rất khuyến khích!"</p>
+                    <p class="reviewer-name">- Lê Hương Giang</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Chuyến đi Côn Đảo thật sự đáng nhớ! Tôi và bạn bè đã có những giây phút thư giãn tuyệt vời. Rất khuyến khích!"</p>
+                    <p class="reviewer-name">- Nguyễn Khánh Huyền</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <button class="prev" onclick="prevSlide()"><i class="fas fa-chevron-left"></i></button>
+                <button class="next" onclick="nextSlide()"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section class="latest-news">
+       <h2>Tin tức du lịch mới nhất</h2>
+       <div class="news-grid">
+       <div class="news-card">
+        <img src="https://tourdulichviet.com/upload/images/du-lich-an-toan-trong-mua-dich.png" alt="Mẹo du lịch biển an toàn">
+         <h3>Mẹo du lịch biển đảo an toàn và tiết kiệm</h3>
+          <p>
+        Tổng hợp những kinh nghiệm quý báu để bạn có chuyến đi biển hoàn hảo... 
+        <a href="tttrangchu1.html" class="read-more">Xem chi tiết</a>
+      </p>
+    </div>
+    <div class="news-card">
+      <img src="https://file.hstatic.net/1000184601/article/du-lich-mua-he-di-dau_960be8b0468d40fb92e7519f6e8391e7.jpg" alt="Tour mới">
+      <h3>Kinh nghiệm khi đi du lịch biển đảo</h3>
+      <p>
+        Tổng hợp những kinh nghiệm khi đi du lịch biển đảo dịp mùa hè này... 
+        <a href="tttrangchu2.html" class="read-more">Xem chi tiết</a>
+      </p>
+    </div>
+    <div class="news-card">
+      <img src="https://media.vietnamplus.vn/images/7255a701687d11cb8c6bbc58a6c80785e5cfc7e04564b5d711f7c23cbb7f5e5f83e88a275a370d06ea034757f7b7941b747907ead874c96b35e2b164701c37d106f3a3158c5bebf98b6f4feb76a73c2f/nghinh-ong-can-gio-2-5641.jpg" alt="Văn hóa biển">
+      <h3>Tìm hiểu văn hóa biển đảo qua các lễ hội truyền thống</h3>
+      <p>
+        Khám phá nét đẹp văn hóa độc đáo của người dân vùng biển Việt Nam... 
+        <a href="tttrangchu3.html" class="read-more">Xem chi tiết</a>
+      </p>
+    </div>
+  </div>
+  <a href="trangtintuc.html" class="btn-view">Đọc thêm tin tức mới</a>
+</section>
+        <section class="newsletter-signup">
+            <h2>Đăng ký nhận thông tin ưu đãi</h2>
+            <p>Nhận ngay những tin tức mới nhất và ưu đãi độc quyền từ HAQ OCEAN TOURS!</p>
+            <form class="signup-form" onsubmit="window.location.href='lienhe.html'; return false;">
+            <input type="email" name="email" placeholder="Nhập email của bạn" required>
+            <button type="submit">Đăng ký</button>
+          </form>
+        </section>
+
+        <section class="contact-info">
+            <h2>Liên hệ với chúng tôi</h2>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fas fa-building"></i>
+                    <p><strong>Trụ sở chính:</strong> Tòa nhà PCC01, tầng 2, phường Phú Lãm, quận Thanh Xuân, tp Hà Nội </p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <p><strong>Điện thoại:</strong> <a href="tel:+84987654321">0987 654 321</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p><strong>Email:</strong> <a href="mailto:info@haqoceantours.vn">HAQOCEANTOURS@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </section>
+    </main>
+   <footer>
+    <div class="footer-container">
+      <!-- Phần giới thiệu -->
+      <div class="footer-section about">
+        <h3><strong>Về HAQ OCEAN TOURS</strong></h3>
+        <p>Chúng tôi mang đến những trải nghiệm du lịch độc đáo, khám phá vẻ đẹp hoang sơ của các bãi biển và đảo xinh đẹp. Hãy cùng chúng tôi hành trình chạm đến thiên nhiên tuyệt vời.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <!-- Phần thông tin liên hệ -->
+      <div class="footer-section contact">
+        <h3><strong>Thông tin liên hệ</strong></h3>
+        <ul>
+          <li><span><b>Địa chỉ</b>:</span> Tòa nhà PCC01, tầng 2, phường Phú Lãm, quận Thanh Xuân, tp Hà NộI </li>
+          <li><span><b>Email</b>:</span> HAQOCEANTOURS@gmail.com</li>
+          <li><span><b>SĐT</b>:</span> 0987 654 321 </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 HAQ OCEANS TOURS. Bảo lưu mọi quyền.</p>
+    </div>
+  </footer>
+    <script src="index.js"></script>
+</body>
+</html>
+

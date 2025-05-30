@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Khám phá các tour du lịch biển đảo Việt Nam cùng HAQ OCEAN TOURS - dịch vụ chuyên nghiệp, hành trình độc đáo, ưu đãi hấp dẫn.">
+    <title>Liên hệ - HAQ OCEAN TOURS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="lienhe.css">
+</head>
+<body>
+    <header class="container1">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/screenshot_1748014051.png" alt="Logo">
+            </div>
+           <div class="menu-icon">&#9776;</div>
+            <ul class="menu">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="vechungtoi.html">Về chúng tôi</a></li>
+                <li class="dropdown">
+                    <a href="diadiem1.html" class="dropbtn">Địa điểm nổi bật <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="mienbac1.html">Miền Bắc</a>
+                        <a href="mientrung1.html">Miền Trung</a>
+                        <a href="miennam1.html">Miền Nam</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="Trang tours.html" class="dropbtn">Tours <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="MienBac.html">Miền Bắc</a>
+                        <a href="MienTrung.html">Miền Trung</a>
+                        <a href="MienNam.html">Miền Nam</a>
+                    </div>
+                </li>
+                <li><a href="trangtintuc.html">Tin tức</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="search-section">
+            <video autoplay muted loop playsinline id="video-background">
+                <source src="video/lienhe.mp4" type="video/mp4">
+            </video>
+            <div class="contact-content">
+                <div class="header">
+                    <h1>Gửi Thông Tin Cho Chúng Tôi Để Nhận Ưu Đãi Trong Hè Này</h1>
+                </div>
+                <div class="contact-info">
+                    <div>
+                        <i class="fas fa-map-marker-alt"> Tòa nhà PCC01, tầng 2, phường Phú Lãm, quận Thanh Xuân, tp Hà NộI</i>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone-volume"> 0987 654 321</i>
+                       
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"> HAQOCEANTOURS@gmail.com</i>
+                    </div>
+                </div>
+                <form id="booking-form" class="contact-form">
+                    <h2>Vui lòng điền đầy đủ thông tin</h2>
+                    <label for="fullname">Họ và tên:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="tel" id="phone" name="phone" required pattern="0[0-9]{9,11}" title="Phải bắt đầu bằng 0 và từ 10–12 chữ số">
+                    <label for="email">Email (gmail):</label>
+                    <input type="email" id="email" name="email" required placeholder="tài khoản gmail">
+                    <label for="people">Số người:</label>
+                    <input type="number" id="people" name="people" min="1" required>
+                    <label for="date">Chọn ngày đi:</label>
+                    <input type="date" id="date" name="date" required>
+                    <label for="message">Nội dung:</label>
+                    <textarea id="message" name="message" rows="3"></textarea>
+                    <button type="submit" class="btn primary">Gửi ngay</button>
+                    <div id="thank-you" class="thank-you-message" style="display:none;">
+                        <p>Cảm ơn bạn đã để lại thông tin,<br>
+                        chúng tôi sẽ liên hệ với bạn trong vòng 24h để trao đổi thông tin cụ thể với bạn.</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+      <!-- Phần giới thiệu -->
+      <div class="footer-section about">
+        <h3><strong>Về HAQ OCEAN TOURS</strong></h3>
+        <p>Chúng tôi mang đến những trải nghiệm du lịch độc đáo, khám phá vẻ đẹp hoang sơ của các bãi biển và đảo xinh đẹp. Hãy cùng chúng tôi hành trình chạm đến thiên nhiên tuyệt vời.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <!-- Phần thông tin liên hệ -->
+      <div class="footer-section contact">
+        <h3><strong>Thông tin liên hệ</strong></h3>
+        <ul>
+          <li><span><b>Địa chỉ</b>:</span> Tòa nhà PCC01, tầng 2, phường Phú Lãm, quận Thanh Xuân, tp Hà NộI </li>
+          <li><span><b>Email</b>:</span> HAQOCEANTOURS@gmail.com</li>
+          <li><span><b>SĐT</b>:</span> 0987 654 321 </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 HAQ OCEANS TOURS. Bảo lưu mọi quyền.</p>
+    </div>
+    </footer>
+    <script src="1.js"></script>
+</body>
+</html>
